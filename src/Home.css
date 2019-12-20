@@ -1,0 +1,8 @@
+.App-logo {
+    height: 20vmin;
+}
+.profile-img {
+    max-width: 256px;
+    max-height: 256px;
+    border-radius: 50%;
+}

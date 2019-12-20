@@ -1,0 +1,18 @@
+
+.header {
+    min-height: 1em;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    box-shadow: 0px 0px 10px lightgray;
+    padding: 10px 10px;
+  }
+
+  .row {
+    padding-left: 1em;
+  }
+
+  .row > div {
+    /* min-width: 120px; */
+    min-width: 8em;
+  }

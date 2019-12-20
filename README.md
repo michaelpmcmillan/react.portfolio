@@ -20,3 +20,8 @@ Generate components:
 react-create component Home
 react-create component Portfolio
 ```
+
+Run in Dev:
+```
+npm start
+```

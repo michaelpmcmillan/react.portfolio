@@ -1,22 +1,27 @@
-.App {
+
+
+.contact-me-bar > a {
+  margin-right: 0.25rem;
+  text-decoration: none;
+}
+.contact-me-bar > a:hover {
+    text-decoration: none;
+}
+a.site-title {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+.page {
+  height:100%;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
+a {
+  text-decoration: none;
+  color: black;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #09d3ac;
+.nav-item {
+  list-style: none;
 }
