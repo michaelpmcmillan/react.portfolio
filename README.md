@@ -13,6 +13,7 @@ Install packages:
 npm install -g react-create
 npm install --save react-router-dom
 npm install --save react-fontawesome
+npm install --save gh-pages
 ```
 
 Generate components:
@@ -25,3 +26,11 @@ Run in Dev:
 ```
 npm start
 ```
+
+Deploy:
+```
+npm predeploy
+npm deploy
+```
+Push the deploy folder to the `mcmillanmichael.github.io
+` repository.
