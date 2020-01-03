@@ -24,6 +24,7 @@ react-create component Portfolio
 
 Run in Dev:
 ```
+npm install
 npm start
 ```
 

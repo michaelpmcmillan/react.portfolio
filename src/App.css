@@ -1,4 +1,7 @@
-
+html {
+  position: relative;
+  min-height: 100%;
+}
 
 .contact-me-bar > a {
   margin-right: 0.25rem;
@@ -14,7 +17,9 @@ a.site-title {
 }
 .page {
   height:100%;
+  margin-bottom: 60px;
   text-align: center;
+  padding-bottom: 16px;
 }
 
 a {
