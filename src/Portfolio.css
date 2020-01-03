@@ -1,0 +1,9 @@
+h4.card-title {
+    text-decoration: underline;
+}
+.card {
+    margin: 0.5rem;
+}
+.card-body {
+    padding: 0.75rem;
+}

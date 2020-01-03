@@ -8,6 +8,7 @@
     left: 0;
     bottom: 0;
     right: 0;
+    width: 100%;
     display: block;
     text-align: left;
 }
@@ -16,16 +17,4 @@
     padding-left: 1em;
     padding-right: 1em;
     line-height: 3em;
-}
-
-
-  
-
-.footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    white-space: nowrap;
-    height: 60px;
-    line-height: 60px;
 }
