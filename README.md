@@ -29,8 +29,8 @@ npm start
 
 Deploy:
 ```
-npm predeploy
-npm deploy
+npm run-script predeploy
+npm run-script deploy
 ```
 Push the deploy folder to the `mcmillanmichael.github.io
 ` repository.
