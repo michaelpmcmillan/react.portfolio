@@ -17,7 +17,9 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build && rmdir /Q /S docs && rename build docs",
+    "prebuild": "rmdir /Q /S docs",
+    "build": "react-scripts build",
+    "postbuild": "rename build docs && copy CNAME .\\docs\\CNAME",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
