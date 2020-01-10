@@ -14,11 +14,14 @@ export default class Home extends Component {
         <p>Based in Manchester, UK</p>
         
         <div className="contact-me-bar">
-          <a href="https://www.linkedin.com/in/michaelpmcmillan/" className="text-secondary">
+          <a href="https://www.linkedin.com/in/michaelpmcmillan/" className="text-secondary" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-linkedin fa-2x"></i>
           </a>
-          <a href="mailto:portfolio@mikemcmillan.dev" className="text-secondary">
+          <a href="mailto:portfolio@mikemcmillan.dev" className="text-secondary" target="_blank" rel="noopener noreferrer">
             <i className="far fa-envelope fa-2x"></i>
+          </a>
+          <a href="https://github.com/mcmillanmichael" className="text-secondary" target="_blank" rel="noopener noreferrer">
+            <i className="fab fa-github fa-2x"></i>
           </a>
         </div>
 
