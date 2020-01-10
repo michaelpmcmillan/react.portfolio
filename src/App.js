@@ -19,7 +19,7 @@ function App() {
 
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route path="portfolio" component={Portfolio} />
+          <Route path="/portfolio" component={Portfolio} />
         </Switch>
 
         <Footer />
