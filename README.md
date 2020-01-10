@@ -30,7 +30,6 @@ npm start
 
 Deploy:
 ```
-npm run-script predeploy
-npm run-script deploy
+npm run-script build
 ```
-Push the deploy folder to the `mcmillanmichael.github.io` repository.
+Then just push changes to github.
