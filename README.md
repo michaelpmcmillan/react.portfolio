@@ -33,5 +33,4 @@ Deploy:
 npm run-script predeploy
 npm run-script deploy
 ```
-Push the deploy folder to the `mcmillanmichael.github.io
-` repository.
+Push the deploy folder to the `mcmillanmichael.github.io` repository.
