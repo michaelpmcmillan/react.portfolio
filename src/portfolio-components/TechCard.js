@@ -22,23 +22,6 @@ export default class TechCard extends Component {
           <h4 class="card-title">Technology</h4>
           <div class="card-text">
             <ReactMarkdown source={markdown} />
-            {/* Proficient:
-            <ul>
-              <li>C# .NET</li>
-              <li>Agile/Scrum</li>
-              <li>Entity Framework, Linq</li>
-              <li>SQL Server, TSQL</li>
-              <li>WPF/XAML with MVVM pattern</li>
-              <li>WCF</li>
-              <li>Powershell</li>
-            </ul>
-            Researching:
-            <ul>
-              <li>asp.net core, razor pages</li>
-              <li>javascript, bootstrap</li>
-              <li>angular</li>
-              <li>python</li>
-            </ul> */}
           </div>
         </div>
       </div>
