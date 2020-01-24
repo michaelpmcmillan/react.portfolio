@@ -1,5 +1,5 @@
-# mcmillanmichael.github.io
-A portfolio in react, which is hosted here: https://mikemcmillan.dev/
+# react.portfolio
+A portfolio in react that is hosted here https://mikemcmillan.dev
 
 # Steps
 
