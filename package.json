@@ -1,25 +1,36 @@
 {
-  "name": "mcmillanmichael.github.io",
-  "homepage": "https://mcmillanmichael.github.io",
+  "name": "mikemcmillan.dev",
+  "homepage": ".",
+  "repository": "https://github.com/mcmillanmichael/react.portfolio",
+  "author": "mike.mcmillan",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.26",
     "@fortawesome/free-solid-svg-icons": "^5.12.0",
     "@fortawesome/react-fontawesome": "^0.1.8",
+    "@popperjs/core": "^2.0.0",
     "bootstrap": "^4.4.1",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.16.1",
     "react": "^16.12.0",
     "react-bootstrap": "^1.0.0-beta.16",
     "react-dom": "^16.12.0",
     "react-flexbox-grid": "^2.1.2",
+    "react-markdown": "^4.3.1",
     "react-router-dom": "^5.1.2",
-    "react-scripts": "3.2.0"
+    "react-scripts": "^3.3.0",
+    "typescript": "^3.7.5"
+  },
+  "optionalDependencies": {
+    "fsevents": "^1.2.11"
   },
   "scripts": {
     "start": "react-scripts start",
-    "prebuild": "rmdir /Q /S docs",
     "build": "react-scripts build",
-    "postbuild": "rename build docs && copy CNAME .\\docs\\CNAME",
+    "docker-build": "docker build . --rm -t portfolio:latest",
+    "docker-run": "docker run --rm -d -p 80:80/tcp portfolio:latest",
+    "dev": "yarn build-docker | yarn run-docker",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

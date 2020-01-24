@@ -1,9 +1,13 @@
-h4.card-title {
+.card-title {
     text-decoration: underline;
 }
 .card {
     margin: 0.5rem;
+    text-align: justify;
 }
 .card-body {
     padding: 0.75rem;
+}
+ul > li {
+    color: #313539;
 }

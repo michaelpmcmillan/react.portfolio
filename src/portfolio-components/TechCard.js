@@ -1,13 +1,28 @@
 import React, { Component } from 'react';
+import ReactMarkdown from 'react-markdown'
+import TechMarkdown from './tech.md'
 
 export default class TechCard extends Component {
+
+  constructor() {
+    super();
+    this.state = { markdown: '' };
+  }
+
+  componentWillMount() {
+    // Get the contents from the Markdown file and put them in the React state, so we can reference it in render() below.
+    fetch(TechMarkdown).then(res => res.text()).then(text => this.setState({ markdown: text }));
+  }
+
   render() {
+    const { markdown } = this.state;
     return (
       <div class="card bg-light col-sm-5">
         <div class="card-body">
           <h4 class="card-title">Technology</h4>
           <div class="card-text">
-            Proficient:
+            <ReactMarkdown source={markdown} />
+            {/* Proficient:
             <ul>
               <li>C# .NET</li>
               <li>Agile/Scrum</li>
@@ -23,7 +38,7 @@ export default class TechCard extends Component {
               <li>javascript, bootstrap</li>
               <li>angular</li>
               <li>python</li>
-            </ul>
+            </ul> */}
           </div>
         </div>
       </div>

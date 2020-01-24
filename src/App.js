@@ -8,7 +8,7 @@ import './App.css';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/React">
       <div className="app">
         <link 
           href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" 
@@ -19,7 +19,7 @@ function App() {
 
         <Switch>
           <Route exact path="/" component={Home} />
-          <Route path="/portfolio" component={Portfolio} />
+          <Route exact path="/portfolio" component={Portfolio} />
         </Switch>
 
         <Footer />
