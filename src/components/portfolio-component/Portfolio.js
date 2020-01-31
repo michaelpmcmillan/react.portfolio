@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import SummaryCard from './portfolio-components/SummaryCard'
-import TechCard from './portfolio-components/TechCard'
+import PortfolioCard from './PortfolioCard'
 import ExperienceCard from './portfolio-components/ExperienceCard';
 import EducationCard from './portfolio-components/EducationCard';
 import ExtraCurricularCard from './portfolio-components/ExtraCurricularCard';
@@ -11,8 +10,8 @@ export default class Portfolio extends Component {
     return (
       <div className="portfolio page">
         <div class="row">
-          <SummaryCard />
-          <TechCard />
+          <PortfolioCard title="Summary" markdownFile="summary.md" />
+          <PortfolioCard title="Tech" markdownFile="tech.md" />
         </div>
         <ExperienceCard />
         <EducationCard />
