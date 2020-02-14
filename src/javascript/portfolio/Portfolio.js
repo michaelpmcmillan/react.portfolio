@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import PortfolioCard from './PortfolioCard'
 import ExperienceCard from './ExperienceCard';
 import EducationCard from './EducationCard';
-import './Portfolio.css'
+import '../../styles/Portfolio.css'
 
 export default class Portfolio extends Component {
   render() {
