@@ -7,7 +7,7 @@ module;
 
   constructor(props) {
     super();
-    module = require('./portfolio-components/' + props.markdownFile);
+    module = require('../../assets/content/' + props.markdownFile);
     this.state = {
         markdown: 'default', 
         title: props.title, 
@@ -24,7 +24,7 @@ module;
 
   render() {
     return (
-      <div class="card bg-light col-sm-5">
+      <div class="card bg-light">
         <div class="card-body">
           <h4 class="card-title">{this.state.title}</h4>
           <div class="card-text">
