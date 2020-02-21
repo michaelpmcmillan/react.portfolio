@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import logo from '../../assets/mikemcmillan.jpg';
-import './Home.css';
+import logo from '../images/mikemcmillan.jpg';
+import '../styles/Home.css';
 
 export default class Home extends Component {
   render() {

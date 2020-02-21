@@ -1,13 +1,11 @@
 import React, { Component } from 'react';
 import ReactMarkdown from 'react-markdown'
 
-export default class TechCard extends Component {
-
-module;
+export default class PortfolioCard extends Component {
 
   constructor(props) {
     super();
-    module = require('../../assets/content/' + props.markdownFile);
+    module = require('../../content/' + props.markdownFile);
     this.state = {
         markdown: 'default', 
         title: props.title, 
