@@ -11,22 +11,22 @@ module.exports = {
       {
         test: /\.(js)$/,
         exclude: /node_modules/,
-        use: [{ loader: "babel-loader" }]
+        use: ["babel-loader"]
       },
       {
         test: /\.html$/,
         exclude: /node_modules/,
-        use: [{ loader: "html-loader" }]
+        use: ["html-loader"]
       },
       {
         test: /\.css$/,
         exclude: /node_modules/,
-        use: [{ loader: "css-loader" }]
+        use: ["style-loader", "css-loader"]
       },
       {
         test: /\.(jpg|svg|md)$/,
         exclude: /node_modules/,
-        use: [{ loader: "file-loader" }]
+        use: ["file-loader"]
       }
     ]
   },

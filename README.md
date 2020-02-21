@@ -34,15 +34,16 @@ npm run-script build
 ```
 Then just push changes to github.
 
-# Yarn
+# Yarn - Docker
 Build and Run this app in docker:
 ```
-yarn dev
+yarn docker-build
+yarn docker-run
 ```
 
-# Docker
-
+# Yarn - Local
+Build and Run this app in docker:
 ```
-docker build . --rm -t portfolio:latest
-docker run --rm -d -p 80:80/tcp portfolio:latest
+yarn build
+yarn start
 ```
