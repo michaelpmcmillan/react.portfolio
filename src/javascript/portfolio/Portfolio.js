@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import PortfolioCard from './PortfolioCard'
-import ExperienceCard from './ExperienceCard';
-import EducationCard from './EducationCard';
 import '../../styles/Portfolio.css'
 
 export default class Portfolio extends Component {
@@ -10,8 +8,11 @@ export default class Portfolio extends Component {
       <div className="portfolio page">
         <PortfolioCard title="Summary" markdownFile="summary.md" />
         <PortfolioCard title="Tech" markdownFile="tech.md" />
-        <ExperienceCard />
-        <EducationCard />
+        <PortfolioCard title="Ultra Electronics Airport Systems" markdownFile="ultra-senior-level.md" />
+        <PortfolioCard title="Ultra Electronics Airport Systems" markdownFile="ultra-mid-level.md" />
+        <PortfolioCard title="eSAY Solutions" markdownFile="esay.md" />
+        <PortfolioCard title="Salford University" markdownFile="salford-university.md" />
+        <PortfolioCard title="Tameside College" markdownFile="tameside-college.md" />
         <PortfolioCard title="Extra Curricular" markdownFile="extra-curricular.md" />
       </div>
     )
