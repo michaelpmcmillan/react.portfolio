@@ -1,14 +1,18 @@
 import React from 'react';
-import { BrowserRouter, Switch, Route } from 'react-router-dom';
+import { 
+  BrowserRouter, 
+  Switch, 
+  Route
+} from 'react-router-dom';
 import Home from "./Home";
 import Header from "./Header";
 import Footer from "./Footer";
 import Portfolio from "./portfolio/Portfolio";
 import '../styles/App.css';
 
-function App() {
+export default function App() {
   return (
-    <BrowserRouter basename="/React">
+    <BrowserRouter>
       <div className="app">
         <link 
           href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" 
@@ -18,15 +22,12 @@ function App() {
         <Header />
 
         <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/portfolio" component={Portfolio} />
+          <Route path="/portfolio" component={Portfolio} />
+          <Route path="/" component={Home} />
         </Switch>
 
         <Footer />
-        
       </div>
     </BrowserRouter>
-  );
+ );
 }
-
-export default App;
