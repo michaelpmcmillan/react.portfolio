@@ -10,4 +10,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: build
-      run: make github-pages
+      run: |
+        yarn
+        yarn install
+        make github-pages
