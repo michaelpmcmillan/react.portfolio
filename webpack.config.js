@@ -26,7 +26,7 @@ module.exports = {
         use: ["style-loader", "css-loader"]
       },
       {
-        test: /\.(jpg|svg|md|ico)$/,
+        test: /\.(jpg|png|svg|md|ico)$/,
         exclude: /node_modules/,
         use: ["file-loader"]
       }
