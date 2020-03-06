@@ -24,6 +24,7 @@ export default function App() {
         <Switch>
           <Route path="/portfolio" component={Portfolio} />
           <Route path="/" component={Home} />
+          <Route path="*" component={Home} />
         </Switch>
 
         <Footer />
