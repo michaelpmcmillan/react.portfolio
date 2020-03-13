@@ -1,6 +1,6 @@
 docker-build: 
-	docker build . --rm -t portfolio:master
+	docker build . --rm -t mikemcmillan/portfolio:master
 docker-run: 
-	docker run --rm -d -p 80:80/tcp portfolio:master
+	docker run --rm -d -p 80:80/tcp mikemcmillan/portfolio:master
 docker-push:
 	docker push mikemcmillan/portfolio:master
