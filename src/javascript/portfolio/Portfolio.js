@@ -8,6 +8,7 @@ export default class Portfolio extends Component {
       <div className="portfolio page">
         <PortfolioCard title="Summary" markdownFile="summary.md" />
         <PortfolioCard title="Tech" markdownFile="tech.md" />
+        <PortfolioCard title="On The Beach" markdownFile="onthebeach.md" />
         <PortfolioCard title="Ultra Electronics Airport Systems" markdownFile="ultra-senior-level.md" />
         <PortfolioCard title="Ultra Electronics Airport Systems" markdownFile="ultra-mid-level.md" />
         <PortfolioCard title="eSAY Solutions" markdownFile="esay.md" />
