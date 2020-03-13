@@ -5,11 +5,21 @@ on:
     branches: [ master ]
 
 jobs:
+
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: build
+      run: make docker-build
+
   deploy:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - name: build
-      run: |
-        make docker-build
-        make docker-push
+    - name: publish
+      uses: HurricanKai/Publish-Docker-Github-Action@master
+      with:
+        name: mikemcmillan/portfolio:master
+        username: ${{ secrets.DOCKER_USERNAME }}
+        password: ${{ secrets.DOCKER_PASSWORD }}
