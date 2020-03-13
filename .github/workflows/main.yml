@@ -11,6 +11,5 @@ jobs:
     - uses: actions/checkout@v2
     - name: build
       run: |
-        yarn
-        yarn install
-        make github-pages
+        make docker-build
+        make docker-push

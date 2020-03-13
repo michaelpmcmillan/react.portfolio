@@ -42,8 +42,8 @@
   "scripts": {
     "start": "webpack-dev-server --open --mode development",
     "build": "webpack --mode production",
-    "docker-build": "docker build . --rm -t portfolio:latest",
-    "docker-run": "docker run --rm -d -p 80:80/tcp portfolio:latest",
+    "docker-build": "make docker-build",
+    "docker-run": "make docker-run",
     "dev": "yarn docker-build && yarn docker-run",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
