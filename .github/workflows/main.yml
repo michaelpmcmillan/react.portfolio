@@ -20,6 +20,6 @@ jobs:
     - name: publish
       uses: HurricanKai/Publish-Docker-Github-Action@master
       with:
-        name: mikemcmillan/portfolio:master
+        name: mikemcmillan/portfolio
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
