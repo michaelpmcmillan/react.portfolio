@@ -1,5 +1,5 @@
 # react.portfolio
-A portfolio in react that is hosted here https://mikemcmillan.dev
+My portfolio in react
 
 # Steps
 
